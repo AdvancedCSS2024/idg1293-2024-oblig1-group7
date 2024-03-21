@@ -1,1 +1,43 @@
-/*# sourceMappingURL=common.css.map */
+.login__form--input {
+  padding: 27px 12px 15px;
+  border: 1px solid #6c757d;
+  border-style: none none solid none;
+  background-color: rgba(0, 0, 0, 0.09);
+  text-align: left;
+  height: auto;
+  font-weight: 600;
+  font-size: 0.938rem;
+  position: relative;
+  outline: none;
+}
+.login__form--input:hover {
+  background-color: #dadada;
+}
+.login__button {
+  min-width: 150px;
+  margin: 32px 0px 0px;
+  padding: 16px;
+  font-size: 1.063rem;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  border-radius: 6px;
+  box-shadow: none;
+  text-transform: none;
+  background-color: #1d72db;
+  color: white;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+.login__button:hover {
+  background-color: rgba(0, 48, 102, 0.808);
+}
+.login__newuser {
+  color: #1d72db;
+  background-color: white;
+  margin: 16px 0px 0px;
+}
+.login__newuser:hover {
+  background-color: rgb(243, 243, 243);
+}/*# sourceMappingURL=common.css.map */
