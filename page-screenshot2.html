@@ -30,19 +30,19 @@
         <div class="login">
   
           <div class="login__header">   
-          <a href="https://www.finn.no/"><img src="img/finnlogo.png" class="login__finnlogo" alt="finnlogo"> </a>
-          <img src="img/Schibsted.png" class="login__schibstedlogo" alt="">
+          <a href="https://www.finn.no/"><img src="img/finnlogo.png" class="login__header-finnlogo" alt="finn-logo"></a>
+          <img src="img/Schibsted.png" class="login__header-schibstedlogo" alt="schibsted-logo">
           </div>
   
           
           <form class="login__form">
             <h1 class="login__title">Logg inn</h1>
           
-              <input type="text" id="username" placeholder="Skriv inn din e-postadresse*" class="login__form--input" required >
-              <p>*Nødvendig felt</p> 
+              <input type="text" id="username" placeholder="Skriv inn din e-postadresse*" class="login__form-input" required >
+              <p class="login__form-paragraph">*Nødvendig felt</p> 
               
-              <input type="password" id="password" placeholder="Vennligst oppgi passordet ditt*" class="login__form--input" required>
-              <p>*Nødvendig felt</p>
+              <input type="password" id="password" placeholder="Vennligst oppgi passordet ditt*" class="login__form-input" required>
+              <p class="login__form-paragraph">*Nødvendig felt</p>
               
                 <div class="login__forgotten">
                     <a href="https://payment.schibsted.no/authn/?client_sdrn=sdrn%3Aspid.no%3Aclient%3A5087dc1b421c7a0b79000000&nonce=3afa0685-bbb3-4c7e-bcd2-1db8f53f1c81&state=be4aeae2cbc545f92b29b85a70171f909e8ccea07cb1ee5a7ae1212e264d2b06c6af439e87fb2e31cffd419cb59fe511a910b97cbcaf59bec6610f19034ef99ef3850750c427499ec19ce88bd82aeb6c933882a54ee28ff95fb6a487697dc2e3ea4222981d398136fcfd3e6d0b53aa7713fbd08dccdb4925bc75664068f5eed6&client_id=5087dc1b421c7a0b79000000&one_step_login=true&teaser=login-v1&acr_values=password">
@@ -52,24 +52,23 @@
   
   
   
-              <div class="login__rememberme">
-                  <div><input type="checkbox" class="login__checkbox"> <p> Hold meg innlogget</p></div>
-                  <img class="login__info" src="img/info.png" alt="">
+              <div class="login__remember">
+                  <div class="login__remember-block"><input type="checkbox" class="login__remember-checkbox"> <p class="login__remember-text"> Hold meg innlogget</p></div>
+                  <img class="login__remember-info" src="img/info.png" alt="info-icon">
               </div>
     
-  
               <button type="submit" class="login__button">Logg på</button>
   
-              <button type="submit" class="login__button login__newuser">Opprette ny konto</button>
+              <button type="submit" class="login__button-new">Opprette ny konto</button>
           </form>
         
   
         </div>
-          <p class="login__links"> 
-            <a href="https://payment.schibsted.no/profile-pages/faq?client_id=5087dc1b421c7a0b79000000&from=login">Hjelp</a> 
-            <a href="https://info.privacy.schibsted.com/no/schibsted-norge-personvernerklaering/">Personvernerklæring</a> 
-            <a href="https://payment.schibsted.no/about/terms?locale=no_NO">Vilkår</a> 
-            <a href="https://info.privacy.schibsted.com/no/hva-er-en-schibsted-konto/">Om Schibsted-konto</a>
+          <p class="login__link"> 
+            <a class="login__link-click" href="https://payment.schibsted.no/profile-pages/faq?client_id=5087dc1b421c7a0b79000000&from=login">Hjelp</a> 
+            <a class="login__link-click" href="https://info.privacy.schibsted.com/no/schibsted-norge-personvernerklaering/">Personvernerklæring</a> 
+            <a class="login__link-click" href="https://payment.schibsted.no/about/terms?locale=no_NO">Vilkår</a> 
+            <a class="login__link-click" href="https://info.privacy.schibsted.com/no/hva-er-en-schibsted-konto/">Om Schibsted-konto</a>
           </p>
         </div>
   
