@@ -151,6 +151,7 @@ a {
 }
 .login__links {
   padding: 32px 20px 0px;
+  justify-content: space-evenly;
   margin: 0px;
   display: flex;
   gap: 16px;
