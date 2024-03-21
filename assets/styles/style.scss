@@ -60,6 +60,246 @@ html {
     }
 }
 
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+
+// Rules for the phone div, image + text
+
+.phone {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    width: 648px;
+    height: 480px;
+    margin: 10px;
+    background-color: #f1f9ff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    font-size: 16px;
+
+    &__image {
+        max-height: 200px;
+        max-width: 98px;
+        margin: 16px 0px;
+    }
+
+    &__text {
+        padding: 0px 10px;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
+// Rules for the login div
+
+.login {
+    width: 450px;
+    height: 612px;
+    background-color: $login-background-color;
+    text-align: center;
+    justify-content: center;
+    border-radius: 9px;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 9px 46px 8px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .14);
+
+    // Rules for header and the logos (login__header)
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 89px;
+        padding: 0px 32px;
+        // Rules for images/icons in login div
+
+        &-finnlogo {
+            width: 36px;
+            height: 18px;
+        }
+
+        &-schibstedlogo {
+            width: 115px;
+            height: 24px;
+        }
+    }
+
+    // Rules for the login title
+    &__title {
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 0px 0px 16px;
+        font-weight: 700;
+        color: black;
+    }
+
+
+    // Rules for the form (login__form)
+
+    &__form {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 386px;
+        padding: 0 2rem 2.5rem;
+        height: auto;
+
+        &-input {
+            padding: 27px 12px 15px;
+            border: 1px solid $secondary-color;
+            border-style: none none solid none;
+            background-color: rgba(0, 0, 0, 0.09);
+            text-align: left;
+            height: auto;
+            font-weight: 600;
+            font-size: 0.938rem;
+            position: relative;
+            outline: none;
+
+            // Background-color changes when hovered
+            &:hover {
+                background-color: #dadada;
+            }
+        }
+
+        // Rules for all p/text inside the form
+        &-paragraph {
+            color: rgba(0, 0, 0, 0.54);
+            margin: 0px;
+            font-size: 0.8142857142857143rem;
+            margin-top: 3px;
+            margin-bottom: 12px;
+            text-align: left;
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            line-height: 1.66;
+        }
+    }
+
+    // Glemt passord?
+    &__forgotten {
+        text-align: left;
+        text-decoration: underline;
+        line-height: 1.1;
+        cursor: pointer;
+        font-size: 0.95rem;
+        margin: 12px 0px 0px;
+    }
+
+    // checkbox + text + info  
+    &__remember {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        text-align: left;
+        margin: 16px 0px 0px;
+
+        &-text {
+            font-family: Source Sans Pro;
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.43;
+            font-size: 0.95rem;
+            color: #111;
+        }
+
+        &-block {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &-checkbox {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            border: 1px solid grey;
+            cursor: pointer;
+        }
+
+        &-info {
+            max-width: 24px;
+            max-height: 24px;
+            padding: 12px;
+            cursor: pointer;
+        }
+    }
+
+
+    &__link {
+        padding: 32px 20px 0px;
+        margin: 0px;
+        display: flex;
+        gap: 16px;
+        font-size: 0.875rem;
+        max-width: 450px;
+        color: grey;
+        text-decoration: none;
+        text-align: center;
+
+        &-click {
+            color: grey;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+
+    &__button,
+    &__button-new {
+        min-width: 150px;
+        margin: 32px 0px 0px;
+        padding: 16px;
+        font-size: 1.063rem;
+        line-height: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        border-radius: 6px;
+        box-shadow: none;
+        text-transform: none;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 48, 102, 0.808);
+        }
+
+        // Button for new user
+        &-new {
+            color: $primary-color;
+            background-color: white;
+            margin: 16px 0px 0px;
+
+            &:hover {
+                background-color: rgb(243, 243, 243);
+            }
+        }
+    }
+
+}
+
 .header {
     display: flex;
     border: none;
