@@ -151,6 +151,13 @@ a {
         &-icon-svg {
             height: 24px;
             width: 24px;
+
+            &--smaller {
+                width: 16px;
+                height: 16px;
+                fill: none;
+            }
+
         }
 
         &-icon-path {
@@ -164,6 +171,7 @@ a {
 
             &--message {
                 fill-rule: evenodd;
+                fill: currentColor;
             }
 
             &--circle-user {
@@ -238,6 +246,11 @@ a {
         align-items: center;
         background-color: transparent;
 
+        &-icon-svg {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+        }
+
         &-text {
             width: 1px;
             height: 1px;
@@ -280,6 +293,10 @@ a {
         height: 24px;
         width: 24px;
     }
+
+    &__map-button-path {
+        fill-rule: evenodd;
+    }
 }
 
 .categories {
@@ -310,6 +327,18 @@ a {
             &--with-fill {
                 fill: #272e3f;
             }
+        }
+
+        &-icon--wrist {
+            fill: #101F41;
+        }
+
+        &-icon--right-hand {
+            fill: #3960BF;
+        }
+
+        &-icon--left-hand {
+            fill: #101F41;
         }
     }
 
