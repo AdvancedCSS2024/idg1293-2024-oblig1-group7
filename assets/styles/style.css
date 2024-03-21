@@ -73,19 +73,21 @@ a {
   height: 89px;
   padding: 0px 32px;
 }
-.login__finnlogo {
+.login__header-finnlogo {
   width: 36px;
   height: 18px;
 }
-.login__schibstedlogo {
+.login__header-schibstedlogo {
   width: 115px;
   height: 24px;
 }
-.login__info {
-  max-width: 24px;
-  max-height: 24px;
-  padding: 12px;
-  cursor: pointer;
+.login__title {
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 0px 0px 16px;
+  font-weight: 700;
+  color: black;
 }
 .login__form {
   display: inline-flex;
@@ -96,7 +98,22 @@ a {
   padding: 0 2rem 2.5rem;
   height: auto;
 }
-.login__form p {
+.login__form-input {
+  padding: 27px 12px 15px;
+  border: 1px solid #6c757d;
+  border-style: none none solid none;
+  background-color: rgba(0, 0, 0, 0.09);
+  text-align: left;
+  height: auto;
+  font-weight: 600;
+  font-size: 0.938rem;
+  position: relative;
+  outline: none;
+}
+.login__form-input:hover {
+  background-color: #dadada;
+}
+.login__form-paragraph {
   color: rgba(0, 0, 0, 0.54);
   margin: 0px;
   font-size: 0.8142857143rem;
@@ -107,14 +124,6 @@ a {
   font-weight: 400;
   line-height: 1.66;
 }
-.login__title {
-  margin-bottom: 2rem;
-  text-align: left;
-  font-size: 1.5rem;
-  margin: 0px 0px 16px;
-  font-weight: 700;
-  color: black;
-}
 .login__forgotten {
   text-align: left;
   text-decoration: underline;
@@ -123,7 +132,7 @@ a {
   font-size: 0.95rem;
   margin: 12px 0px 0px;
 }
-.login__rememberme {
+.login__remember {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +140,7 @@ a {
   text-align: left;
   margin: 16px 0px 0px;
 }
-.login__rememberme p {
+.login__remember-text {
   font-family: Source Sans Pro;
   font-size: 0.95rem;
   font-weight: 400;
@@ -139,30 +148,67 @@ a {
   font-size: 0.95rem;
   color: #111;
 }
-.login__rememberme div {
+.login__remember-block {
   display: inline-flex;
+  align-items: center;
 }
-.login__checkbox {
+.login__remember-checkbox {
   height: 20px;
   width: 20px;
   margin-right: 10px;
   border: 1px solid grey;
   cursor: pointer;
 }
-.login__links {
+.login__remember-info {
+  max-width: 24px;
+  max-height: 24px;
+  padding: 12px;
+  cursor: pointer;
+}
+.login__link {
   padding: 32px 20px 0px;
-  justify-content: space-evenly;
   margin: 0px;
   display: flex;
   gap: 16px;
   font-size: 0.875rem;
   max-width: 450px;
-}
-.login__links a {
   color: grey;
   text-decoration: none;
   text-align: center;
 }
-.login__links a:hover {
+.login__link-click {
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+}
+.login__link-click:hover {
   text-decoration: underline;
+}
+.login__button, .login__button-new {
+  min-width: 150px;
+  margin: 32px 0px 0px;
+  padding: 16px;
+  font-size: 1.063rem;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  border-radius: 6px;
+  box-shadow: none;
+  text-transform: none;
+  background-color: #1d72db;
+  color: white;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+.login__button:hover, .login__button-new:hover {
+  background-color: rgba(0, 48, 102, 0.808);
+}
+.login__button-new, .login__button-new-new {
+  color: #1d72db;
+  background-color: white;
+  margin: 16px 0px 0px;
+}
+.login__button-new:hover, .login__button-new-new:hover {
+  background-color: rgb(243, 243, 243);
 }/*# sourceMappingURL=style.css.map */
