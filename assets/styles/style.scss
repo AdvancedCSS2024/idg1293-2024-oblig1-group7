@@ -1,14 +1,16 @@
-// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
-// Rules for screenshot 2
 
-// Variables
-$background-color: #f8f8f8;
+// Specific rules for screenshot 2
+
+//Variables for the page-screenshot2.html
+$background-color: #FFFFFF;
 $primary-color: #1d72db;
 $secondary-color: #6c757d;
-$login-background-color: #fff;
+$login-background-color: #F6F8FB;
 $cherryRed: #d91f0a;
 $textColor: #464646;
+/*unable to use the font family from the webpage*/
 $font-family: Source Sans Pro,
 Helvetica Neue,
 Helvetica,
@@ -19,63 +21,42 @@ html {
     height: 100%;
 }
 
-body {
+.body {
     font-family: $font-family;
-    background-color: $background-color;
     height: 100%;
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 1.3;
-    letter-spacing: 0.25px;
+    letter-spacing: .25px;
     color: rgb(96, 96, 96);
     margin: 0;
+
+    &--grey {
+        background-color: $login-background-color;
+    }
+
+    &--white {
+        background-color: $background-color;
+    }
 }
 
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     min-height: 100%;
-}
 
-.body {
-    background-color: $login-background-color;
-}
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
 
-.main__container {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-top: 1.5rem;
-    margin: 0 auto;
-    width: 65%;
-}
-
-.container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5rem;
-}
-
-a {
-    color: $primary-color;
-    text-align: left;
-}
-
-.container-phone {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    width: 648px;
-    height: 480px;
-    margin: 10px;
-
-    &__image {
-        max-height: 200px;
-        max-width: 98px;
+    &--start {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 1.5rem;
+        margin: 0 auto;
+        width: 65%;
     }
 }
 
@@ -579,132 +560,5 @@ a {
         font-weight: bold;
         font-size: 14px;
         line-height: 18px;
-    }
-}
-
-.container-login {
-    width: 450px;
-    height: 612px;
-    background-color: $login-background-color;
-    text-align: center;
-    justify-content: center;
-    border-radius: 9px;
-    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
-        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
-
-    &__title {
-        margin-bottom: 2rem;
-        text-align: left;
-        font-size: 2rem;
-        margin: 0px 0px 16px;
-        font-weight: 600;
-        color: black;
-    }
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 89px;
-        padding: 0px 32px;
-    }
-
-    &__header--finnlogo {
-        width: 36px;
-        height: 18px;
-    }
-
-    &__header--schibstedlogo {
-        width: 115px;
-        height: 24px;
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 386px;
-        padding: 0 2rem 2.5rem;
-        height: auto;
-
-        &--label {
-            margin-bottom: 0.5rem;
-        }
-
-        &--rememberme {
-            text-align: left;
-            margin: 16px 0px 0px;
-            font-family: Source Sans Pro;
-            font-size: 0.95rem;
-            font-family: Source Sans Pro;
-            font-weight: 400;
-            line-height: 1.43;
-        }
-
-        a {
-            margin: 12px 0px 0px;
-        }
-
-        &--input {
-            padding: 27px 12px 15px;
-            border: 1px solid $secondary-color;
-            background-color: rgba(0, 0, 0, 0.09);
-            text-align: left;
-            height: auto;
-            font-weight: 600;
-            font-size: 15px;
-        }
-
-        &--button,
-        &--buttonNewUser {
-            min-width: 150px;
-            margin: 32px 0px 0px;
-            padding: 16px;
-            font-size: 17px;
-            line-height: 16px;
-            font-weight: 600;
-            letter-spacing: 0.25px;
-            border-radius: 6px;
-            box-shadow: none;
-            text-transform: none;
-            background-color: $primary-color;
-            color: white;
-            border: none;
-            align-items: center;
-        }
-
-        &--buttonNewUser {
-            color: $primary-color;
-            background-color: white;
-            margin: 16px 0px 0px;
-        }
-
-        &--text {
-            color: rgba(0, 0, 0, 0.54);
-            margin: 0px;
-            font-size: 0.8142857142857143rem;
-            margin-top: 3px;
-            margin-bottom: 12px;
-            text-align: left;
-            font-family: Source Sans Pro;
-            font-weight: 400;
-            line-height: 1.66;
-        }
-    }
-
-    &__links {
-        padding: 32px 16px 0px;
-        margin: 0px;
-        display: flex;
-        gap: 16px;
-        font-size: 14px;
-        max-width: 398px;
-
-        a {
-            color: grey;
-            text-decoration: none;
-            text-align: center;
-        }
     }
 }
