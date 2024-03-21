@@ -31,8 +31,6 @@ Screenshot 2:
 - input password --> .login__form-input (type="password" id="password")
 - button --> .login__button
 
-We then split the components and sat some common rules to these components.
-
 #### 3. page implementation
 Then we split the pages between us, and worked on each one. In our seperate branches, and recreated each of the webpages. 
 
