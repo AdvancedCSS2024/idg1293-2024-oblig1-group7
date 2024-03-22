@@ -45,6 +45,8 @@ We worked in seperate branches, and recreated each of the webpages.
 We faced some issues downloading the branches, but managed to solve them.
 The github branches wouldnt download properly.However, we managed to solve them in the end.
 
+Upon reviewing the page even further, we saw a mistake when classifying the category-options as buttons. We then corrected this.
+
 We ended up making one compiled branch in the end, where we had both the screenshot pages, and all the styles. This branch was later pushed to main.
 
 #### 4.. Demo page
