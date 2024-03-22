@@ -1,1 +1,322 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+
+// Specific rules for screenshot 2
+
+//Variables for the page-screenshot2.html
+$background-color: #FFFFFF;
+$primary-color: #1d72db;
+$secondary-color: #6c757d;
+$login-background-color: #F6F8FB;
+$textColor: #464646;
+/*unable to use the font family from the webpage*/
+$font-family: Source Sans Pro,
+Helvetica Neue,
+Helvetica,
+Arial,
+sans-serif;
+
+html {
+    height: 100%;
+}
+
+.body {
+    font-family: $font-family;
+    height: 100%;
+    font-size: 0.938rem;
+    line-height: 1.3;
+    letter-spacing: .25px;
+    color: rgb(96, 96, 96);
+    margin: 0;
+
+    &--grey {
+        background-color: $login-background-color;
+    }
+
+    &--white {
+        background-color: $background-color;
+    }
+}
+
+.main {
+    display: flex;
+    position: relative;
+    min-height: 100%;
+
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--start {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 1.5rem;
+        margin: 0 auto;
+        width: 65%;
+    }
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+
+// Rules for the phone div, image + text
+
+.phone {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    width: 648px;
+    height: 480px;
+    margin: 10px;
+    background-color: #f1f9ff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    font-size: 16px;
+
+    &__image {
+        max-height: 200px;
+        max-width: 98px;
+        margin: 16px 0px;
+    }
+
+    &__text {
+        padding: 0px 10px;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+}
+
+// Rules for the login div
+
+
+.header {
+    display: flex;
+    border: none;
+    border-bottom: solid rgb(175, 175, 175) 1px;
+}
+
+.search {
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    &__label {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    &__button {
+        &-text {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    }
+
+    &__map {
+        &-button {
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            gap: 10px;
+            background-color: transparent;
+
+            &-text {
+                font-weight: 600;
+                color: $textColor;
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &-svg {
+                fill: #adadad;
+                height: 24px;
+                width: 24px;
+            }
+
+            &-path {
+                fill-rule: evenodd;
+            }
+        }
+    }
+}
+
+.categories {
+    &__nav {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        flex: 1 1 calc(100% / 6);
+        height: 100px;
+        text-align: center;
+        box-sizing: border-box;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:hover .categories__link-icon-path {
+            stroke: #272e3f;
+
+            &--with-fill {
+                fill: #272e3f;
+            }
+        }
+
+        &-icon--wrist {
+            fill: #101F41;
+        }
+
+        &-icon--right-hand {
+            fill: #3960BF;
+        }
+
+        &-icon--left-hand {
+            fill: #101F41;
+        }
+    }
+
+    &__link {
+        display: flex;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 16px 4px 0px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: $textColor;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 18px;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+
+        &-svg {
+            padding: 0;
+            width: 42px;
+            height: 28px;
+            fill: none;
+
+            &-nettbil {
+                width: 48px;
+                height: 28px;
+            }
+        }
+
+        &-path {
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #06befb;
+            stroke-width: 2;
+            width: 42px;
+            height: 28px;
+
+            &--with-fill {
+                stroke-width: 0;
+                fill: #06befb;
+            }
+
+            &-nettbil {
+                fill: #ff8752;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            color: $textColor;
+            margin: 8px 0px 0px;
+
+            &-span {
+                padding: 0;
+                display: inline-flex;
+                justify-content: center;
+                line-height: 12px;
+                font-size: 15px;
+                font-weight: bold;
+                color: #570e2d;
+
+                &--less-margin {
+                    margin-left: -1px;
+                }
+            }
+
+            &--word-break {
+                width: 80%;
+            }
+        }
+
+        &-icon-text {
+            flex-direction: column;
+            display: inline-flex;
+        }
+
+        &-external-svg {
+            top: 0;
+            right: 0;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+        }
+
+        &-external-path {
+            fill: #cccccc;
+        }
+    }
+}
+
+.headline {
+    &__wrapper {
+        margin-top: 20px;
+        display: flex;
+        align-items: end;
+        gap: 10px;
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    &__h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+}

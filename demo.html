@@ -1,11 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo page</title>
-</head>
-<body>
-  <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/common.css" />
+    <title>Demo page</title>
+  </head>
+  <body class="body body--demo">
+    <nav class="header__nav">
+      <!--span for finn logo-->
+      <a href="" class="header__nav-logo-link"
+        ><span class="header__nav-logo">
+          <img
+            src="img/finnlogo.png"
+            alt="finn.no logo"
+            class="header__nav-logo-img"
+          />
+          Mulighetens marked
+        </span></a
+      >
+
+      <!--list for header-menu options-->
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link"
+            ><span class="header__nav-item-icon">
+              <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="header__nav-item-icon-svg"
+              >
+                <path
+                  class="header__nav-item-icon-path"
+                  d="M12 0a.75.75 0 01.75.75v1.534c4.24.391 7.5 4.06 7.5 8.335 0 3.532.37 5.546.716 6.651.172.55.335.867.437 1.032.05.081.086.125.1.14l.003.004A.75.75 0 0121 19.75H3a.75.75 0 01-.6-1.2v-.001l.028-.042c.028-.045.075-.125.135-.245.12-.241.29-.643.467-1.249.352-1.21.72-3.234.72-6.394 0-4.247 3.287-7.938 7.5-8.334V.75A.75.75 0 0112 0zm0 3.75c-3.703 0-6.75 3.166-6.75 6.869 0 3.275-.382 5.442-.78 6.813-.09.313-.183.584-.27.818h15.52a8.375 8.375 0 01-.186-.533c-.405-1.296-.784-3.472-.784-7.098 0-3.731-3.014-6.869-6.75-6.869zM9.789 21.03a.75.75 0 01.93.509c.165.559.7.96 1.284.96.582 0 1.118-.401 1.282-.96a.75.75 0 111.44.422A2.856 2.856 0 0112.002 24c-1.248 0-2.37-.84-2.722-2.038a.75.75 0 01.509-.93z"
+                ></path>
+              </svg>
+              <span class="header__nav-item-notification"></span>
+            </span>
+            <span class="header__nav-item-text">Varslinger</span></a
+          >
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link"
+            ><span class="header__nav-item-icon">
+              <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="header__nav-item-icon-svg header__nav-item-icon-svg--smaller"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  class="header__nav-item-icon-path header__nav-item-icon-path--stroke"
+                  d="M8 5v6M5 8h6M8 15A7 7 0 108 1a7 7 0 000 14z"
+                ></path></svg
+            ></span>
+            <span class="header__nav-item-text">Ny annonse</span></a
+          >
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link">
+            <span class="header__nav-item-icon">
+              <span
+                class="header__nav-item-notification header__nav-item-notification--message"
+              ></span>
+              <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+              <svg
+                class="header__nav-item-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="header__nav-item-icon-path header__nav-item-icon-path--message"
+                  d="M1.72 1.72a.75.75 0 01.53-.22h19.5a.75.75 0 01.75.75v15a.75.75 0 01-.75.75h-10.5a.75.75 0 00-.45.15L6 21.75v-3a.75.75 0 00-.75-.75h-3a.75.75 0 01-.75-.75v-15a.75.75 0 01.22-.53zM2.25 0A2.25 2.25 0 000 2.25v15a2.25 2.25 0 002.25 2.25H4.5v3.75a.75.75 0 001.2.6l5.8-4.35h10.25A2.25 2.25 0 0024 17.25v-15A2.25 2.25 0 0021.75 0H2.25zm5.377 5.25a2.985 2.985 0 00-2.68 1.67.75.75 0 101.347.66 1.485 1.485 0 012.666 0 .75.75 0 101.346-.66 2.985 2.985 0 00-2.679-1.67zm7.416.452A2.985 2.985 0 0119.3 6.919a.75.75 0 01-1.346.662 1.485 1.485 0 00-2.666 0 .75.75 0 01-1.346-.662c.246-.5.627-.922 1.101-1.217zm-6.286 6.494a.75.75 0 10-1.01 1.108 6.497 6.497 0 008.754 0 .75.75 0 10-1.01-1.108 4.997 4.997 0 01-6.734 0z"
+                ></path>
+                <defs>
+                  <clipPath>
+                    <path
+                      d="M0 0h24v24H0z"
+                      class="header__nav-item-icon-path"
+                    ></path>
+                  </clipPath>
+                </defs></svg
+            ></span>
+            <span class="header__nav-item-text">Meldinger</span></a
+          >
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-item-link"
+            ><span class="header__nav-item-icon">
+              <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+              <svg
+                class="header__nav-item-icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  class="header__nav-item-icon-path header__nav-item-icon-path--circle-user"
+                  d="M1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12c0 3.136-1.375 5.952-3.555 7.876a10.497 10.497 0 00-13.89 0A10.474 10.474 0 011.5 12zm3.133 9.473A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12a11.98 11.98 0 004.62 9.463l.013.01zm1.644-.668a8.998 8.998 0 0111.446 0A10.451 10.451 0 0112 22.5a10.45 10.45 0 01-5.723-1.695zM7.5 9.75c0-.494.08-.97.226-1.414A9.461 9.461 0 0013.75 10.5L7.726 8.336 13.75 10.5c.929 0 1.851-.136 2.737-.403A4.5 4.5 0 017.5 9.75zM13.75 9c.884 0 1.76-.146 2.593-.432A4.502 4.502 0 008.45 6.982 7.961 7.961 0 0013.75 9zM6 9.75a5.972 5.972 0 01.843-3.068A6 6 0 116 9.75z"
+                ></path></svg
+            ></span>
+            <span class="header__nav-item-text">Min finn</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <div class="login__card">
+        <div class="login__header">
+          <a href="https://www.finn.no/"
+            ><img
+              src="img/finnlogo.png"
+              class="login__header-finnlogo"
+              alt="finn-logo"
+          /></a>
+          <img
+            src="img/Schibsted.png"
+            class="login__header-schibstedlogo"
+            alt="schibsted-logo"
+          />
+        </div>
+
+        <form class="login__form">
+          <h1 class="login__title">Logg inn</h1>
+
+          <input
+            type="text"
+            id="username"
+            placeholder="Skriv inn din e-postadresse*"
+            class="login__form-input"
+            required
+          />
+          <p class="login__form-paragraph">*Nødvendig felt</p>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Vennligst oppgi passordet ditt*"
+            class="login__form-input login__form-input--password"
+            required
+          />
+          <span class="login__password-eye"></span>
+          <p class="login__form-paragraph">*Nødvendig felt</p>
+
+          <div class="login__forgotten">
+            <a
+              href="https://payment.schibsted.no/authn/?client_sdrn=sdrn%3Aspid.no%3Aclient%3A5087dc1b421c7a0b79000000&nonce=3afa0685-bbb3-4c7e-bcd2-1db8f53f1c81&state=be4aeae2cbc545f92b29b85a70171f909e8ccea07cb1ee5a7ae1212e264d2b06c6af439e87fb2e31cffd419cb59fe511a910b97cbcaf59bec6610f19034ef99ef3850750c427499ec19ce88bd82aeb6c933882a54ee28ff95fb6a487697dc2e3ea4222981d398136fcfd3e6d0b53aa7713fbd08dccdb4925bc75664068f5eed6&client_id=5087dc1b421c7a0b79000000&one_step_login=true&teaser=login-v1&acr_values=password"
+            >
+              Glemt passord?
+            </a>
+          </div>
+
+          <div class="login__remember">
+            <div class="login__remember-block">
+              <input type="checkbox" class="login__remember-checkbox" />
+              <p class="login__remember-text">Hold meg innlogget</p>
+            </div>
+            <img
+              class="login__remember-info"
+              src="img/info.png"
+              alt="info-icon"
+            />
+          </div>
+
+          <button type="submit" class="login__button login__button--existing">
+            Logg på
+          </button>
+
+          <button type="submit" class="login__button login__button--new">
+            Opprette ny konto
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="search__input-container">
+      <label class="search__label" for="search_products_inpTxt">Søk</label>
+      <!--For id's in input, i am using my own naming system "CSET": context, speficic, element type-->
+      <input
+        type="text"
+        class="search__input"
+        id="search_products_inpTxt"
+        placeholder="Søk etter elbil eller teppe"
+      />
+      <button class="search__button">
+        <!--Added due to accesability since button needs text-->
+        <span class="search__button-text">Søk</span>
+        <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="search__button-icon">
+          <g
+            clip-path="url(#bLDU9clip0_963_193)"
+            class="search__button-icon-clip"
+          >
+            <path
+              class="search__button-icon-svg"
+              d="M2.162 13.064A8.313 8.313 0 1117.464 6.56a8.313 8.313 0 01-15.302 6.503zm14.041 4.199a9.81 9.81 0 01-2.552 1.58c-4.988 2.12-10.75-.205-12.87-5.193C-1.337 8.663.988 2.9 5.976.78c4.988-2.119 10.75.206 12.87 5.194a9.813 9.813 0 01-1.581 10.228l6.517 6.518a.75.75 0 01-1.061 1.06l-6.517-6.517z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div class="card__wrapper card__wrapper--demo">
+      <article class="card">
+        <button class="card__favorite-button">
+          <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+          <svg
+            class="card__heart-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="card__heart-path"
+              d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z"
+            ></path>
+          </svg>
+        </button>
+        <a href="" class="card__a-href">
+          <div class="card__img-text">
+            <img
+              src="img/livingroom-image.jpg"
+              alt="house image"
+              class="card__img"
+            />
+            <div class="card__price-container">
+              <span class="card__price">10 000 kr</span>
+            </div>
+          </div>
+          <div class="card__location-wrapper">
+            <span class="card__location-text">Nesoddtangen</span>
+          </div>
+          <h2 class="card__title">Lys toroms leilighet med have og uteplass</h2>
+        </a>
+      </article>
+      <article class="card">
+        <button class="card__favorite-button">
+          <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+          <svg
+            class="card__heart-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="card__heart-path"
+              d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z"
+            ></path>
+          </svg>
+        </button>
+        <a href="" class="card__a-href">
+          <div class="card__img-text">
+            <img
+              src="img/kitchen-image.jpg"
+              alt="kitchen image"
+              class="card__img"
+            />
+            <div class="card__price-container">
+              <span class="card__price">10 000 kr</span>
+            </div>
+          </div>
+          <div class="card__location-wrapper">
+            <span class="card__location-text">Nesodden</span>
+          </div>
+          <h2 class="card__title">Sokkelleilighet</h2>
+        </a>
+      </article>
+      <article class="card">
+        <button class="card__favorite-button">
+          <!--svg and paths to create icon is gathered from https://www.fabric-ds.io/icons-->
+          <svg
+            class="card__heart-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="card__heart-path"
+              d="M11.97 22c.606 0 .948-.53 1.925-1.565 1.22-1.295 2.397-2.501 3.251-3.408 2.523-2.676 3.515-3.691 4.219-4.484 1.87-2.105 2.113-5.03.845-7.252C20.61 2.491 18.225 2 16.942 2s-2.2.492-3.82 1.757L12 4.808l-1.093-1.051C9.15 2.255 7.876 2 7.06 2c-.68 0-3.525 0-5.358 3.291-1.338 2.402-.639 5.36 1.065 7.252.305.34 1.563 1.657 3.745 4.029.878.955 2.122 2.269 3.037 3.266.518.565 1.815 2.162 2.421 2.162z"
+            ></path>
+          </svg>
+        </button>
+        <a href="" class="card__a-href">
+          <div class="card__img-text">
+            <img
+              src="img/house-image.jpg"
+              alt="livingroom image"
+              class="card__img"
+            />
+            <div class="card__price-container">
+              <span class="card__price">800 000 kr</span>
+            </div>
+          </div>
+          <div class="card__location-wrapper">
+            <span class="card__location-text">Ålesund</span>
+          </div>
+          <h2 class="card__title">
+            Hel mikrohus paviljong m/ 3 mikrohus selges samlet eller hve
+          </h2>
+        </a>
+      </article>
+    </div>
+
+    <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
+  </body>
 </html>

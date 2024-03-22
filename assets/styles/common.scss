@@ -1,3 +1,589 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+
+$background-color: #FFFFFF;
+$primary-color: #1d72db;
+$secondary-color: #6c757d;
+$textColor: #464646;
+$cherryRed: #d91f0a;
+$font-family: Source Sans Pro,
+Helvetica Neue,
+Helvetica,
+Arial,
+sans-serif;
+
+.body {
+    &--demo {
+        font-family: $font-family;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.header__nav {
+    height: 50px;
+    display: flex;
+    width: calc(65% + 20px);
+    /*had to do calculation below to make sure items aligned correctly due to logo-image having some white space around it*/
+    margin-left: calc((100% / 2) - (65% / 2) - 10px);
+    justify-content: space-between;
+
+    &-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: bold;
+        height: 100%;
+
+        &-link {
+            box-sizing: border-box;
+            color: $textColor;
+            height: 100%;
+            border-bottom: solid transparent 2px;
+
+            &:hover {
+                border-bottom: solid #0063fb 2px;
+            }
+        }
+
+        &-img {
+            height: 100%;
+        }
+    }
+
+    &-list {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-item {
+        box-sizing: border-box;
+        padding: 0 10px;
+        display: inline-flex;
+        position: relative;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 2px solid #0063fb;
+        }
+
+        &-link {
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            color: $textColor;
+            font-size: 12px;
+            font-weight: bold;
+            gap: 5px;
+        }
+
+        &-icon-svg {
+            height: 24px;
+            width: 24px;
+
+            &--smaller {
+                width: 16px;
+                height: 16px;
+                fill: none;
+            }
+
+        }
+
+        &-icon-path {
+            height: 24px;
+            width: 24px;
+
+            &--stroke {
+                stroke: currentColor;
+                stroke: 1.5;
+            }
+
+            &--message {
+                fill-rule: evenodd;
+                fill: currentColor;
+            }
+
+            &--circle-user {
+                fill: currentColor;
+                fill-rule: evenodd;
+            }
+        }
+
+        &-notification {
+            position: absolute;
+            height: 9px;
+            width: 9px;
+            background-color: $cherryRed;
+            left: 24px;
+            top: 9px;
+            border: solid $background-color 2px;
+            border-radius: 50%;
+
+            &--message {
+                left: 27.5px;
+            }
+        }
+    }
+}
+
+.login {
+    &__card {
+        width: 450px;
+        height: 612px;
+        background-color: $background-color;
+        text-align: center;
+        justify-content: center;
+        border-radius: 9px;
+        box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 9px 46px 8px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .14);
+    }
+
+    // Rules for the form (login__form)
+    &__form {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 386px;
+        padding: 0 2rem 2.5rem;
+        height: auto;
+
+        // Rules for all p/text inside the form
+        &-paragraph {
+            color: rgba(0, 0, 0, 0.54);
+            margin: 0px;
+            font-size: 0.8142857142857143rem;
+            margin-top: 3px;
+            margin-bottom: 12px;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.66;
+        }
+    }
+
+    &__form-input {
+        padding: 27px 12px 15px;
+        border: 1px solid $secondary-color;
+        border-style: none none solid none;
+        background-color: rgba(0, 0, 0, 0.09);
+        box-sizing: border-box;
+        text-align: left;
+        height: auto;
+        font-weight: 600;
+        font-size: 0.938rem;
+        position: relative;
+        outline: none;
+        border-radius: 3px 3px 0px 0px;
+        //set the height so it does not change when the bottom border increases height
+        height: 60.4px;
+
+        // Background-color changes when hovered
+        &:hover {
+            background-color: #CCCCCC;
+        }
+
+        &:focus {
+            background-color: #CCCCCC;
+            border-bottom: solid $primary-color 2px;
+        }
+
+        &--password {
+            &:hover~.login__password-eye {
+                background-color: #e4e4e4;
+
+            }
+
+            //done so image background matches the background of input
+            &:focus~.login__password-eye {
+                background-color: #e4e4e4;
+
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        font-size: 0.875rem;
+        max-width: 450px;
+
+        text-align: center;
+        padding: 32px 20px 0px;
+        margin: 0px;
+        gap: 16px;
+        text-decoration: none;
+
+        &-click {
+            color: grey;
+        }
+    }
+
+    &__button {
+        min-width: 150px;
+        margin: 32px 0px 0px;
+        padding: 16px;
+        font-size: 1.063rem;
+        line-height: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        border-radius: 6px;
+        box-shadow: none;
+        text-transform: none;
+        border: none;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.15s ease-in-out;
+        position: relative;
+
+        /*this ::after was not easy to figure out set up. Tried doing it by changing the 
+        background-color of the button first, but it didnt look correct*/
+        &::after {
+            content: "";
+            border-radius: 6px;
+            display: block;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
+            opacity: 0.4;
+            transition: 0.4s;
+        }
+
+        &:hover:active::after {
+            width: 100%;
+        }
+
+        &--existing {
+            color: white;
+            background-color: $primary-color;
+
+            &:hover {
+                background-color: #004ABC;
+                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.24);
+            }
+
+            &::after {
+                background-color: #ADADAD;
+            }
+        }
+
+        // Button for new user
+        &--new {
+            color: $primary-color;
+            background-color: $background-color;
+            margin: 16px 0px 0px;
+
+            &:hover {
+                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.24);
+                background-color: #F6F8FB;
+            }
+
+            &::after {
+                background-color: #1d72db;
+            }
+        }
+    }
+
+    // Rules for header and the logos (login__header)
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 89px;
+        padding: 0px 32px;
+        // Rules for images/icons in login div
+
+        &-finnlogo {
+            width: 36px;
+            height: 18px;
+        }
+
+        &-schibstedlogo {
+            height: 23px;
+        }
+    }
+
+    // Rules for the login title
+    &__title {
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 0px 0px 16px;
+        font-weight: 700;
+        color: black;
+    }
+
+    //imported with css instead of html so i can do background-blend-mode and make it match the color of the background
+    &__password-eye {
+        position: absolute;
+        background-image: url(../../img/eye-icon.png);
+        height: 20px;
+        width: 27px;
+        right: 40px;
+        top: 169px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        background-blend-mode: multiply;
+    }
+
+    // Glemt passord?
+    &__forgotten {
+        text-align: left;
+        text-decoration: underline;
+        line-height: 1.1;
+        cursor: pointer;
+        font-size: 0.95rem;
+        margin: 12px 0px 0px;
+    }
+
+    // checkbox + text + info  
+    &__remember {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        text-align: left;
+        margin: 16px 0px 0px;
+
+        &-text {
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.43;
+            font-size: 0.95rem;
+            color: #111;
+        }
+
+        &-block {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &-checkbox {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            border: 1px solid grey;
+            cursor: pointer;
+        }
+
+        &-info {
+            max-width: 24px;
+            max-height: 24px;
+            padding: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.search {
+    &__button {
+        &-text {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    &__input-container {
+        max-width: 1100px;
+        position: relative;
+        border: solid #adadad 1px;
+        height: 30px;
+        padding: 5px;
+        flex: 1 0 85%;
+        justify-content: space-between;
+        display: flex;
+        border-radius: 3px;
+    }
+
+    &__input {
+        border: none;
+        width: 90%;
+        font-size: 18px;
+        background-color: transparent;
+    }
+
+    &__input::placeholder {
+        font-size: 16px;
+        color: #c3ccd9;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+
+    &__button {
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+
+        &-icon {
+            height: 24px;
+            width: 24px;
+
+            &-svg {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #171717;
+            }
+        }
+    }
+}
+
+.card {
+    border-radius: 11px;
+    flex: 1 0 33%;
+    position: relative;
+
+    &:hover {
+        background-color: #f1f9ff;
+    }
+
+    &__a-href {
+        display: block;
+        padding: 10px;
+        color: $textColor;
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        justify-content: space-evenly;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+
+        &--demo {
+            //Added since <main> controls the width in page-screenshot1.html. do make sure it is the correct size
+            width: 65%;
+            //added to make sure it does not become too large and the ratios dont match
+            max-width: 1100px;
+        }
+    }
+
+    &__img-text {
+        /*border: solid #C3CCD9 1px;*/
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    &__favorite-button {
+        position: absolute;
+        right: 17px;
+        top: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover::after {
+            background-color: #06befb;
+            /*Opacity to make sure it matches*/
+            opacity: 0.15;
+            display: block;
+        }
+
+        &:hover>.card__heart-svg {
+            fill-opacity: 0.8;
+        }
+    }
+
+    &__heart-svg {
+        height: 24px;
+        width: 24px;
+        fill: #171717;
+        fill-opacity: 0.6;
+    }
+
+    &__heart-path {
+        clip-rule: evenodd;
+        stroke: #fff;
+        stroke-width: 1.5;
+    }
+
+    &__price-container {
+        position: absolute;
+        box-sizing: border-box;
+        height: 40px;
+        bottom: 1px;
+        left: 1.5px;
+        width: calc(100% - 3px);
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.9248949579831933) 0%,
+                rgba(0, 0, 0, 0.92) 12%,
+                rgba(0, 0, 0, 0) 100%);
+        border-radius: 0px 0px 8px 8px;
+        font-weight: bold;
+    }
+
+    &__price {
+        position: absolute;
+        bottom: 10px;
+        left: 7px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: solid #c3ccd9 2px;
+        box-shadow: 0px 0px 30px black inset;
+        display: block;
+    }
+
+    &__location-text {
+        color: #767676;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin: 10px 0px 20px 0px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
