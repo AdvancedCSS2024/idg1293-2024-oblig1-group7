@@ -45,7 +45,7 @@ We worked in seperate branches, and recreated each of the webpages.
 We faced some issues downloading the branches, but managed to solve them.
 The github branches wouldnt download properly.However, we managed to solve them in the end.
 
-We ended up making one compiled, and from then a completed-styling branch in the end, where we had both the screenshot pages, and all the styles. This branch was later pushed to main.
+We ended up making one compiled branch in the end, where we had both the screenshot pages, and all the styles. This branch was later pushed to main.
 
 #### 4.. Demo page
 Implementing the demo page:
@@ -55,11 +55,23 @@ After looking demo.html we inserted the html code related to the components from
 
 #### 5. Finalizing
 When we had merged it all together, we could now deploy the webpage on github.
-Github demo
+Here are screenshots from the websites showing that we accomplished this task
 
+
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/0fb3b569-ba7a-4dd3-9c88-80994bfd9217)
+##### index.html
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/1a85567c-acae-4f5a-8821-a064505f5b2c)
+
+##### Page-screenshot1.html
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/93871cd1-90e4-4617-be82-867497f1a1bf)
+
+##### Page-screenshot2.html
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/c85fa93c-5478-4d9e-8d03-16c4968d8a45)
 
 ### Conclusion
 
 Through this assignment, we have learned more about the use of BEM. We have managed to use BEM and implement it, in a already existing webpage.
 We have faced some issues, but managed to solve them in the end. I think this will help us alot, if we face the same or similar issues in the future.
 We have understood how to work togehter in a Github reposistory, and finalize a comined "product" working this way.
+
+
