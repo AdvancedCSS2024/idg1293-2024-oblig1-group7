@@ -11,10 +11,11 @@ We started by observing both the webpages (in the screenshots) and identifying t
 Here is our images from this part of the task:
 
 ##### Screenshot 1:
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/bc9a76e3-ae12-42a1-8003-3d3cc1b7dffa)
+![Image Alt Text](screenshot1.png)
 
 ##### Screenshot 2:
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/340a0ff5-c943-43d4-9891-3d0a96969f1f)
+![Image Alt Text](screenshot2.png)
+
 
 
 
@@ -59,16 +60,17 @@ After looking demo.html we inserted the html code related to the components from
 When we had merged it all together, we could now deploy the webpage on github.
 Here are screenshots from the websites showing that we accomplished this task
 
+![Image Alt Text](githubconfirm.png)
 
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/0fb3b569-ba7a-4dd3-9c88-80994bfd9217)
 ##### index.html
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/1a85567c-acae-4f5a-8821-a064505f5b2c)
+![Image Alt Text](githubindex.png)
 
 ##### Page-screenshot1.html
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/93871cd1-90e4-4617-be82-867497f1a1bf)
+![Image Alt Text](githubscreen1.png)
 
 ##### Page-screenshot2.html
-![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/c85fa93c-5478-4d9e-8d03-16c4968d8a45)
+![Image Alt Text](githubscreen2.png)
+
 
 ### Conclusion
 
