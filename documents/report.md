@@ -57,15 +57,16 @@ After looking demo.html we inserted the html code related to the components from
 When we had merged it all together, we could now deploy the webpage on github.
 Here are screenshots from the websites showing that we accomplished this task
 
-##### Demo.html
-! Add image from demo.html
+
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/0fb3b569-ba7a-4dd3-9c88-80994bfd9217)
+##### index.html
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/1a85567c-acae-4f5a-8821-a064505f5b2c)
 
 ##### Page-screenshot1.html
-! Add image from page-screenshot1.html
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/93871cd1-90e4-4617-be82-867497f1a1bf)
 
 ##### Page-screenshot2.html
-! Add image from page-screenshot2.html
-
+![image](https://github.com/AdvancedCSS2024/intro-git-github-ViktoriaLangaas/assets/156425660/c85fa93c-5478-4d9e-8d03-16c4968d8a45)
 
 ### Conclusion
 
