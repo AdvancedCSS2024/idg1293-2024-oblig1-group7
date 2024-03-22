@@ -36,7 +36,7 @@
         <!-- Container for the login div -->
 
         <div>
-          <div class="login">
+          <div class="login__card">
             <div class="login__header">
               <a href="https://www.finn.no/"
                 ><img
@@ -67,9 +67,10 @@
                 type="password"
                 id="password"
                 placeholder="Vennligst oppgi passordet ditt*"
-                class="login__form-input"
+                class="login__form-input login__form-input--password"
                 required
               />
+              <span class="login__password-eye"></span>
               <p class="login__form-paragraph">*Nødvendig felt</p>
 
               <div class="login__forgotten">
@@ -92,9 +93,14 @@
                 />
               </div>
 
-              <button type="submit" class="login__button">Logg på</button>
+              <button
+                type="submit"
+                class="login__button login__button--existing"
+              >
+                Logg på
+              </button>
 
-              <button type="submit" class="login__button-new">
+              <button type="submit" class="login__button login__button--new">
                 Opprette ny konto
               </button>
             </form>

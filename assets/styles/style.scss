@@ -8,7 +8,6 @@ $background-color: #FFFFFF;
 $primary-color: #1d72db;
 $secondary-color: #6c757d;
 $login-background-color: #F6F8FB;
-$cherryRed: #d91f0a;
 $textColor: #464646;
 /*unable to use the font family from the webpage*/
 $font-family: Source Sans Pro,
@@ -104,318 +103,13 @@ a {
 
 }
 
-
 // Rules for the login div
 
-.login {
-    width: 450px;
-    height: 612px;
-    background-color: $login-background-color;
-    text-align: center;
-    justify-content: center;
-    border-radius: 9px;
-    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 9px 46px 8px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .14);
-
-    // Rules for header and the logos (login__header)
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 89px;
-        padding: 0px 32px;
-        // Rules for images/icons in login div
-
-        &-finnlogo {
-            width: 36px;
-            height: 18px;
-        }
-
-        &-schibstedlogo {
-            width: 115px;
-            height: 24px;
-        }
-    }
-
-    // Rules for the login title
-    &__title {
-        margin-bottom: 2rem;
-        text-align: left;
-        font-size: 1.5rem;
-        margin: 0px 0px 16px;
-        font-weight: 700;
-        color: black;
-    }
-
-
-    // Rules for the form (login__form)
-
-    &__form {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 386px;
-        padding: 0 2rem 2.5rem;
-        height: auto;
-
-        &-input {
-            padding: 27px 12px 15px;
-            border: 1px solid $secondary-color;
-            border-style: none none solid none;
-            background-color: rgba(0, 0, 0, 0.09);
-            text-align: left;
-            height: auto;
-            font-weight: 600;
-            font-size: 0.938rem;
-            position: relative;
-            outline: none;
-
-            // Background-color changes when hovered
-            &:hover {
-                background-color: #dadada;
-            }
-        }
-
-        // Rules for all p/text inside the form
-        &-paragraph {
-            color: rgba(0, 0, 0, 0.54);
-            margin: 0px;
-            font-size: 0.8142857142857143rem;
-            margin-top: 3px;
-            margin-bottom: 12px;
-            text-align: left;
-            font-family: Source Sans Pro;
-            font-weight: 400;
-            line-height: 1.66;
-        }
-    }
-
-    // Glemt passord?
-    &__forgotten {
-        text-align: left;
-        text-decoration: underline;
-        line-height: 1.1;
-        cursor: pointer;
-        font-size: 0.95rem;
-        margin: 12px 0px 0px;
-    }
-
-    // checkbox + text + info  
-    &__remember {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-        text-align: left;
-        margin: 16px 0px 0px;
-
-        &-text {
-            font-family: Source Sans Pro;
-            font-size: 0.95rem;
-            font-weight: 400;
-            line-height: 1.43;
-            font-size: 0.95rem;
-            color: #111;
-        }
-
-        &-block {
-            display: inline-flex;
-            align-items: center;
-        }
-
-        &-checkbox {
-            height: 20px;
-            width: 20px;
-            margin-right: 10px;
-            border: 1px solid grey;
-            cursor: pointer;
-        }
-
-        &-info {
-            max-width: 24px;
-            max-height: 24px;
-            padding: 12px;
-            cursor: pointer;
-        }
-    }
-
-
-    &__link {
-        padding: 32px 20px 0px;
-        margin: 0px;
-        display: flex;
-        gap: 16px;
-        font-size: 0.875rem;
-        max-width: 450px;
-        color: grey;
-        text-decoration: none;
-        text-align: center;
-
-        &-click {
-            color: grey;
-            text-decoration: none;
-            text-align: center;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-    }
-
-
-    &__button,
-    &__button-new {
-        min-width: 150px;
-        margin: 32px 0px 0px;
-        padding: 16px;
-        font-size: 1.063rem;
-        line-height: 16px;
-        font-weight: 600;
-        letter-spacing: 0.25px;
-        border-radius: 6px;
-        box-shadow: none;
-        text-transform: none;
-        background-color: $primary-color;
-        color: white;
-        border: none;
-        align-items: center;
-        cursor: pointer;
-
-        &:hover {
-            background-color: rgba(0, 48, 102, 0.808);
-        }
-
-        // Button for new user
-        &-new {
-            color: $primary-color;
-            background-color: white;
-            margin: 16px 0px 0px;
-
-            &:hover {
-                background-color: rgb(243, 243, 243);
-            }
-        }
-    }
-
-}
 
 .header {
     display: flex;
     border: none;
     border-bottom: solid rgb(175, 175, 175) 1px;
-    height: 50px;
-
-    &__nav {
-        display: flex;
-        width: calc(65% + 20px);
-        /*had to do calculation below to make sure items aligned correctly due to logo-image having some white space around it*/
-        margin-left: calc((100% / 2) - (65% / 2) - 10px);
-        justify-content: space-between;
-
-        &-logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 12px;
-            line-height: 16px;
-            font-weight: bold;
-            height: 100%;
-
-            &-link {
-                box-sizing: border-box;
-                color: $textColor;
-                height: 100%;
-                border-bottom: solid transparent 2px;
-
-                &:hover {
-                    border-bottom: solid #0063fb 2px;
-                }
-            }
-
-            &-img {
-                height: 100%;
-            }
-        }
-    }
-
-    &__nav-list {
-        display: flex;
-        gap: 10px;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__nav-item {
-        box-sizing: border-box;
-        padding: 0 10px;
-        display: inline-flex;
-        position: relative;
-        border-bottom: 2px solid transparent;
-        cursor: pointer;
-
-        &:hover {
-            border-bottom: 2px solid #0063fb;
-        }
-
-        &-link {
-            display: flex;
-            text-decoration: none;
-            justify-content: center;
-            align-items: center;
-            color: $textColor;
-            font-size: 12px;
-            font-weight: bold;
-            gap: 5px;
-        }
-
-        &-icon-svg {
-            height: 24px;
-            width: 24px;
-
-            &--smaller {
-                width: 16px;
-                height: 16px;
-                fill: none;
-            }
-
-        }
-
-        &-icon-path {
-            height: 24px;
-            width: 24px;
-
-            &--stroke {
-                stroke: currentColor;
-                stroke: 1.5;
-            }
-
-            &--message {
-                fill-rule: evenodd;
-                fill: currentColor;
-            }
-
-            &--circle-user {
-                fill: currentColor;
-                fill-rule: evenodd;
-            }
-        }
-
-        &-notification {
-            position: absolute;
-            height: 9px;
-            width: 9px;
-            background-color: $cherryRed;
-            left: 24px;
-            top: 9px;
-            border: solid $background-color 2px;
-            border-radius: 50%;
-
-            &--message {
-                left: 27.5px;
-            }
-        }
-    }
 }
 
 .search {
@@ -425,17 +119,6 @@ a {
         gap: 20px;
     }
 
-    &__input-container {
-        position: relative;
-        border: solid #adadad 1px;
-        height: 30px;
-        padding: 5px;
-        flex: 1 0 85%;
-        justify-content: space-between;
-        display: flex;
-        border-radius: 3px;
-    }
-
     &__label {
         position: absolute;
         height: 1px;
@@ -443,35 +126,7 @@ a {
         overflow: hidden;
     }
 
-    &__input {
-        border: none;
-        width: 90%;
-        font-size: 18px;
-        background-color: transparent;
-    }
-
-    &__input::placeholder {
-        font-size: 16px;
-        color: #c3ccd9;
-    }
-
-    &__input:focus {
-        outline: none;
-    }
-
     &__button {
-        cursor: pointer;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-
-        &-icon-svg {
-            fill-rule: evenodd;
-            clip-rule: evenodd;
-        }
-
         &-text {
             width: 1px;
             height: 1px;
@@ -479,44 +134,37 @@ a {
         }
     }
 
-    &__button-icon {
-        height: 24px;
-        width: 24px;
-    }
+    &__map {
+        &-button {
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            gap: 10px;
+            background-color: transparent;
 
-    &__button-icon-svg {
-        fill: #171717;
-    }
+            &-text {
+                font-weight: 600;
+                color: $textColor;
+                font-size: 17px;
 
-    &__map-button {
-        cursor: pointer;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0;
-        gap: 10px;
-        background-color: transparent;
-    }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-    &__map-button-text {
-        font-weight: 600;
-        color: $textColor;
-        font-size: 17px;
+            &-svg {
+                fill: #adadad;
+                height: 24px;
+                width: 24px;
+            }
 
-        &:hover {
-            text-decoration: underline;
+            &-path {
+                fill-rule: evenodd;
+            }
         }
-    }
-
-    &__map-button-svg {
-        fill: #adadad;
-        height: 24px;
-        width: 24px;
-    }
-
-    &__map-button-path {
-        fill-rule: evenodd;
     }
 }
 
@@ -670,135 +318,5 @@ a {
     &__h1 {
         margin: 0;
         font-size: 22px;
-    }
-}
-
-.card {
-    border-radius: 11px;
-    flex: 1 0 33%;
-    position: relative;
-
-    &:hover {
-        background-color: #f1f9ff;
-    }
-
-    &__a-href {
-        display: block;
-        padding: 10px;
-        color: $textColor;
-        text-decoration: none;
-    }
-
-    &__wrapper {
-        justify-content: space-evenly;
-        margin: 20px 0;
-        width: 100%;
-        display: flex;
-    }
-
-    &__img-text {
-        /*border: solid #C3CCD9 1px;*/
-        padding: 0;
-        margin: 0;
-        position: relative;
-    }
-
-    &__favorite-button {
-        position: absolute;
-        right: 17px;
-        top: 16px;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        height: 40px;
-        width: 40px;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        border: none;
-        z-index: 2;
-
-        &::after {
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: 50%;
-            content: "";
-            display: none;
-            height: 100%;
-            width: 100%;
-        }
-
-        &:hover::after {
-            background-color: #06befb;
-            /*Opacity to make sure it matches*/
-            opacity: 0.15;
-            display: block;
-        }
-
-        &:hover>.card__heart-svg {
-            fill-opacity: 0.8;
-        }
-    }
-
-    &__heart-svg {
-        height: 24px;
-        width: 24px;
-        fill: #171717;
-        fill-opacity: 0.6;
-    }
-
-    &__heart-path {
-        clip-rule: evenodd;
-        stroke: #fff;
-        stroke-width: 1.5;
-    }
-
-    &__price-container {
-        position: absolute;
-        box-sizing: border-box;
-        height: 40px;
-        bottom: 1px;
-        left: 1.5px;
-        width: calc(100% - 3px);
-        background: rgb(0, 0, 0);
-        background: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.9248949579831933) 0%,
-                rgba(0, 0, 0, 0.92) 12%,
-                rgba(0, 0, 0, 0) 100%);
-        border-radius: 0px 0px 8px 8px;
-        font-weight: bold;
-    }
-
-    &__price {
-        position: absolute;
-        bottom: 10px;
-        left: 7px;
-        color: #fff;
-        font-size: 14px;
-        line-height: 18px;
-    }
-
-    &__img {
-        width: 100%;
-        border-radius: 10px;
-        box-sizing: border-box;
-        border: solid #c3ccd9 2px;
-        box-shadow: 0px 0px 30px black inset;
-        display: block;
-    }
-
-    &__location-text {
-        color: #767676;
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    &__title {
-        display: inline-block;
-        margin: 10px 0px 20px 0px;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
     }
 }
